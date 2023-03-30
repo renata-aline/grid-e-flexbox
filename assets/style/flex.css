@@ -1,3 +1,4 @@
+    /* cabeçalho */
 
 .menu {
   display: flex;
@@ -6,14 +7,33 @@
   flex-wrap: wrap;
   column-gap: 33px; 
 }
+    /* categorias */
+.categorias__lista {
+   display: flex;
+   flex-direction: column;
+   row-gap: .5rem; 
+}
+
+    /* destaque */
+.destaques {
+    display: flex;
+}
 
 @media  (min-width: 720px) {
+    /* cabeçalho */
   .menu {
     column-gap: 75px;
+  }
+  /* categorias */
+  .categorias__lista {
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
   }
 }
 
 @media  (min-width: 1440px) {
+    /* cabeçalho */
     .menu {
         column-gap: 105px;
         flex-wrap: nowrap;
